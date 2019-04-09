@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozyCo", "CozyCo\CozyCo.csproj", "{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozyCo.Model", "CozyCo.Model\CozyCo.Model.csproj", "{30747C0A-2A6D-4125-942C-29A164FCAB03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30747C0A-2A6D-4125-942C-29A164FCAB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30747C0A-2A6D-4125-942C-29A164FCAB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30747C0A-2A6D-4125-942C-29A164FCAB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30747C0A-2A6D-4125-942C-29A164FCAB03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
