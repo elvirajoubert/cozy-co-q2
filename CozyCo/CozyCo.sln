@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozyCo", "CozyCo\CozyCo.csproj", "{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CozyCo.WebUI", "CozyCo\CozyCo.WebUI.csproj", "{7DB97CD8-5DC0-44FE-B2DE-39F93D5654FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CozyCo.Model", "CozyCo.Model\CozyCo.Model.csproj", "{30747C0A-2A6D-4125-942C-29A164FCAB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CozyCo.Models", "CozyCo.Model\CozyCo.Models.csproj", "{30747C0A-2A6D-4125-942C-29A164FCAB03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
