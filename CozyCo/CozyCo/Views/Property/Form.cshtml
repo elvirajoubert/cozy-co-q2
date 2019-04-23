@@ -1,7 +1,25 @@
 ﻿@model Property
-<h1>Add a new Property</h1>
+@*
+    Same page for Add and Edit (actions)
+    Add -> Model is null
+    Edit -> Model is not null
+*@
 
-<form asp-action="add" asp-controller="property" method="post">
+@{
+    // Ternary operator
+    var action = Model == null ? "Add" : "Edit";
+}
+
+@if (action == "Add")
+{
+    <h1>Add a new Property</h1>
+}
+else
+{
+    <h1>Edit Property</h1>
+}
+
+<form asp-action="@action" asp-controller="property" method="post">
     <div class="form-group">
         <label asp-for="Address"></label>
         <input class="form-control" asp-for="Address">
@@ -22,6 +40,6 @@
         <input class="form-control" asp-for="Zipcode">
     </div>
 
-    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="submit" class="btn btn-primary">@action</button>
     <a class="btn btn-secondary" asp-action="index" asp-controller="property">Cancel</a>
 </form>

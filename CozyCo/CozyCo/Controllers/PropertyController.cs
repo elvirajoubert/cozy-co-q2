@@ -24,7 +24,7 @@ namespace CozyCo.WebUI.Controllers
         // GET property/add
         public IActionResult Add()
         {
-            return View();
+            return View("Form"); // --> Add.cshtml, remaned to Form.cshtml
         }
 
         [HttpPost]
@@ -39,7 +39,7 @@ namespace CozyCo.WebUI.Controllers
         {
             var property = Properties.Single(p => p.Id == id);
             
-            return View();
+            return View(property);
         }
 
         public IActionResult Delete(int id)
@@ -47,6 +47,30 @@ namespace CozyCo.WebUI.Controllers
             var property = Properties.Single(p => p.Id == id);
 
             Properties.Remove(property);
+
+            return View(nameof(Index), Properties);
+        }
+
+        // property/edit/1
+        public IActionResult Edit(int id) // --> get id from URL 
+        {
+            var property = Properties.Single(p => p.Id == id);
+
+            return View("Form", property); // Edit.cshtml, remaned to Form.cshtml
+        }
+
+        [HttpPost]
+        // get id from URL
+        // get updatedProperty from FORM
+        public IActionResult Edit(int id, Property updatedProperty)
+        {
+            var oldProperty = Properties.Single(p => p.Id == id);
+
+            oldProperty.Address = updatedProperty.Address;
+            oldProperty.Address2 = updatedProperty.Address2;
+            oldProperty.City = updatedProperty.City;
+            oldProperty.Image = updatedProperty.Image;
+            oldProperty.Zipcode = updatedProperty.Zipcode;
 
             return View(nameof(Index), Properties);
         }
